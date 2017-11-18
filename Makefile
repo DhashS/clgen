@@ -32,8 +32,8 @@ clean_targets =
 distclean_targets =
 
 # allow overriding python:
-PYTHON ?= python3
-PIP ?= pip3
+PYTHON ?= python3.6
+PIP ?= python3.6 -m pip
 
 # We are using $(llvm-config --cxxflags) to include LLVM headers, which outputs
 # clang-specific cflags, e.g. -fcolor-diagnostics.
