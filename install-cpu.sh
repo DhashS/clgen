@@ -29,7 +29,7 @@ wget https://github.com/ChrisCummins/clgen/archive/0.4.0.dev0.tar.gz -O clgen-0.
     echo '  <https://chriscummins.cc/clgen/>' >&2
     exit 1
 }
-tar xf clgen-0.4.0.dev0.tar.gz
+tar xf --no-same-owner clgen-0.4.0.dev0.tar.gz
 rm clgen-0.4.0.dev0.tar.gz
 cd clgen-0.4.0.dev0
 ./configure --batch

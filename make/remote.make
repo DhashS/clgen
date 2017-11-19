@@ -39,5 +39,5 @@ endef
 #
 define unpack-tar
 	mkdir -p $1
-	tar -xf $2 -C $1 --strip-components=1 $3
+	tar -xf $2 -C $1 --no-same-owner --strip-components=1 $3
 endef

@@ -34,7 +34,7 @@ $(ninja_tar):
 # unpack and build
 $(ninja): $(ninja_tar)
 	$(call unpack-tar,$(dir $@),$<)
-	cd $(dir $@) && ./configure.py --bootstrap
+	cd $(dir $@) && python3.6 configure.py --bootstrap
 
 .PHONY: distclean-ninja
 distclean-ninja:
